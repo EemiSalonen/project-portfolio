@@ -1,0 +1,27 @@
+main {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	width: 100%;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	grid-column: 2;
+	margin: 15px;
+}
+
+img {
+	width: 300px;
+}
+
+section {
+	grid-column: 2;
+	margin: 15px;
+}
+
+#projects {
+	display: flex;
+	justify-content: center;
+}
