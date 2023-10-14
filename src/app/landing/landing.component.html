@@ -1,24 +1,36 @@
 <main>
 	<header>
 		<img src="../../assets/cvkuva.jpg" alt="ptf-image" />
-		<h1>Eemi Salonen</h1>
+		<div id="introduction">
+			<h1>Eemi Salonen</h1>
+			<p>
+				I am a student at Jyväskylä University of Applied Sciences, studying to
+				become a Full Stack Developer. Currently on my third and final year, and
+				looking for a job practice to improve my skills and proceed to a full
+				time job!
+			</p>
+		</div>
 	</header>
 
 	<section>
-		<p>
-			I am a student at Jyväskylä University of Applied Sciences, studying to
-			become a Full Stack Developer. Currently on my third and final year, and
-			looking for a job practice to improve my skills and proceed to a full time
-			job!
-		</p>
-	</section>
-
-	<section>
-		<div id="projects">
-			<app-card
-				imgsrc="../../assets/touras.PNG"
-				title="Tournament Assembly"
-			></app-card>
-		</div>
+		<app-card
+			imgsrc="../../assets/touras.PNG"
+			title="Tournament Assembly"
+			minDesc="Tournament creation application"
+			desc="Tournament Assembly is an tournament creation application, that allows
+			users to create various types of tournaments, such as leagues, playoffs
+			and groups. It was created with a team of five students and I worked on
+			the project as the Product Owner, technical supervisor and tester. This
+			allowed me to learn many useful skills in many different fields."
+			[icons]="tourasIcons"
+		></app-card>
+		<app-card
+			imgsrc="../../assets/flagguesser.PNG"
+			title="Flagguesser"
+			minDesc="Country flag guessing game"
+			desc="Flagguesser is a game in which you guess country flag based on a selected continent. It tracks your score based on an user account that is stored in MongoDB. 
+			This project was my first Full Stack Develoment project."
+			[icons]="flagguesserIcons"
+		></app-card>
 	</section>
 </main>

@@ -1,4 +1,18 @@
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+	color: var(--text);
+}
+
+:root {
+	--background: #101010;
+	--section: #1e1e1e;
+	--card-background: #363636;
+	--text: rgb(184, 15, 10);
+}
+
+html {
+	background-color: var(--background);
 }
