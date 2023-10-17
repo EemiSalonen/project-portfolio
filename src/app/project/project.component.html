@@ -1,1 +1,22 @@
-<p>project works!</p>
+<header>
+	<h1>{{ proj.title }}</h1>
+
+	<p>{{ proj.desc }}</p>
+	<br />
+
+	<div id="issues" *ngFor="let issue of proj.issues">
+		<h2>{{ issue.title }}</h2>
+
+		<h3>{{ issue.desc }}</h3>
+
+		<p>
+			{{ issue.resolution }}
+		</p>
+
+		<div id="imgs">
+			<div class="img-container" *ngFor="let img of issue.images">
+				<i>{{ img.desc }}</i>
+			</div>
+		</div>
+	</div>
+</header>
