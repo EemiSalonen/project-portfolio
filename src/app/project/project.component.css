@@ -1,36 +1,51 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  width: 100%;
+}
+
 #imgs {
-	display: flex;
-	margin: 15px;
+  display: flex;
+  margin: 15px;
+}
+
+#container {
+  grid-column: 2;
 }
 
 .img-container {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
-	width: 200px;
-	height: 300px;
+  width: 200px;
+  height: 300px;
 }
 
 i {
-	padding: 15px;
-	font-size: 0.8em;
-	cursor: pointer;
+  padding: 15px;
+  font-size: 0.8em;
+  cursor: pointer;
 }
 
 i:hover {
-	transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 h2 {
-	margin: 15px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+h2:hover {
+  transform: scale(1.1);
 }
 
 h3 {
-	margin: 15px;
+  margin: 15px;
 }
 
 p {
-	margin: 15px;
+  margin: 15px;
 }

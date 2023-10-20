@@ -1,22 +1,25 @@
-<header>
-	<h1>{{ proj.title }}</h1>
+<main>
+  <div id="container">
+    <h1>{{ proj.title }}</h1>
+    <p>{{ proj.desc }}</p>
+    <br />
 
-	<p>{{ proj.desc }}</p>
-	<br />
+    <div id="issues" *ngFor="let issue of proj.issues">
+      <h2 (click)="openIssue(issue.title)">{{ issue.title }}</h2>
 
-	<div id="issues" *ngFor="let issue of proj.issues">
-		<h2>{{ issue.title }}</h2>
+      <div *ngIf="open === issue.title">
+        <h3>{{ issue.desc }}</h3>
 
-		<h3>{{ issue.desc }}</h3>
+        <p>
+          {{ issue.resolution }}
+        </p>
 
-		<p>
-			{{ issue.resolution }}
-		</p>
-
-		<div id="imgs">
-			<div class="img-container" *ngFor="let img of issue.images">
-				<i>{{ img.desc }}</i>
-			</div>
-		</div>
-	</div>
-</header>
+        <div id="imgs">
+          <div class="img-container" *ngFor="let img of issue.images">
+            <i>{{ img.desc }}</i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

@@ -1,35 +1,41 @@
 main {
-	display: grid;
-	grid-template-columns: 1fr 2fr 1fr;
-	width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 20px;
 }
 
 header {
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-	grid-column: 2;
-	margin-top: 0;
-	background-color: var(--header);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  grid-column: 1;
+  margin: 15px;
+  padding: 10px;
+  background-color: var(--header);
 }
 
 img {
-	width: 300px;
-	padding: 15px;
-	border-radius: 100px;
+  width: 300px;
+  padding: 15px;
+  border-radius: 100px;
 }
 
 section {
-	grid-column: 2;
-	width: 100%;
+  margin-left: 50px;
+  grid-column: 2;
+  width: 100%;
 }
 
 #projects {
-	padding: 15px;
-	display: flex;
-	justify-content: center;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 app-card {
-	margin: 15px;
+  margin: 15px;
 }
