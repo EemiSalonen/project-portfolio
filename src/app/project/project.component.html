@@ -1,25 +1,34 @@
 <main>
-  <div id="container">
-    <h1>{{ proj.title }}</h1>
-    <p>{{ proj.desc }}</p>
-    <br />
+	<div id="container">
+		<h1>{{ proj.title }}</h1>
+		<p>{{ proj.desc }}</p>
+		<br />
 
-    <div id="issues" *ngFor="let issue of proj.issues">
-      <h2 (click)="openIssue(issue.title)">{{ issue.title }}</h2>
+		<div id="issues" *ngFor="let issue of proj.issues">
+			<h2 (click)="openIssue(issue.title)">{{ issue.title }}</h2>
 
-      <div *ngIf="open === issue.title">
-        <h3>{{ issue.desc }}</h3>
+			<div *ngIf="open === issue.title">
+				<h3>{{ issue.desc }}</h3>
 
-        <p>
-          {{ issue.resolution }}
-        </p>
+				<p>
+					{{ issue.resolution }}
+				</p>
 
-        <div id="imgs">
-          <div class="img-container" *ngFor="let img of issue.images">
-            <i>{{ img.desc }}</i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+				<div id="imgs">
+					<div class="img-container" *ngFor="let img of issue.images">
+						<p (click)="selectImage(img)">
+							<i>{{ img.desc }}</i>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<app-imgview
+		*ngIf="selectedImg"
+		[imgsrc]="selectedImg.src"
+		[alt]="selectedImg.alt"
+		[desc]="selectedImg.desc"
+		(closeEvent)="closeImage()"
+	></app-imgview>
 </main>

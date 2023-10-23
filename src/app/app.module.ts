@@ -6,6 +6,7 @@ import { AppComponent } from "./app.component";
 import { LandingComponent } from "./landing/landing.component";
 import { CardComponent } from "./card/card.component";
 import { ProjectComponent } from "./project/project.component";
+import { ImgviewComponent } from './imgview/imgview.component';
 
 @NgModule({
 	declarations: [
@@ -13,6 +14,7 @@ import { ProjectComponent } from "./project/project.component";
 		LandingComponent,
 		CardComponent,
 		ProjectComponent,
+  ImgviewComponent,
 	],
 	imports: [BrowserModule, AppRoutingModule],
 	providers: [],
