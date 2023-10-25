@@ -5,6 +5,7 @@ export const projects: Project[] = [
 		id: 0,
 		title: "Tournament Assembly",
 		desc: "This project is part of the Ticorporate course in JAMK. During the coursestudents do a larger project of their own choosing in groups of five. My role in the project was product owner, technical supervisor and testing. I wrote code in the frontend aswell as the backend and made sure the project was on time and retained the vision we planned in the beginning.",
+		ghLink: "https://github.com/jamktiko/TournamentAssembly-svelte",
 		issues: [
 			{
 				title: "Tournament caching",

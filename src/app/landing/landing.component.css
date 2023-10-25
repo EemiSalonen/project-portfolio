@@ -10,6 +10,11 @@ main > * {
 }
 
 h1 {
+	align-self: start;
+}
+
+#job-title {
+	color: var(--contrast);
 	margin-bottom: 20px;
 	align-self: start;
 }
@@ -42,8 +47,17 @@ header {
 }
 
 .contact-btn {
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255, 255, 255, 0.1);
 	color: var(--text);
+}
+
+button {
+	transition: transform 100ms;
+	cursor: pointer;
+}
+
+button:hover {
+	transform: scale(1.05);
 }
 
 #bg-img {

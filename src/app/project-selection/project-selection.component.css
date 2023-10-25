@@ -34,3 +34,12 @@ app-card {
 	right: 0;
 	bottom: 0;
 }
+
+#main-title {
+	margin-top: 50px;
+	color: var(--contrast);
+}
+
+#page-desc {
+	margin-bottom: 30px;
+}

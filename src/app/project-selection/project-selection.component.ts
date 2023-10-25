@@ -13,12 +13,12 @@ export class ProjectSelectionComponent {
 			alt: "sveltelogo",
 		},
 		{
-			iconSrc: "../../assets/express.png",
-			alt: "expresslogo",
-		},
-		{
 			iconSrc: "../../assets/mongo.png",
 			alt: "mongologo",
+		},
+		{
+			iconSrc: "../../assets/express.png",
+			alt: "expresslogo",
 		},
 	];
 
@@ -29,12 +29,12 @@ export class ProjectSelectionComponent {
 			alt: "sveltelogo",
 		},
 		{
-			iconSrc: "../../assets/express.png",
-			alt: "expresslogo",
-		},
-		{
 			iconSrc: "../../assets/mongo.png",
 			alt: "mongologo",
+		},
+		{
+			iconSrc: "../../assets/express.png",
+			alt: "expresslogo",
 		},
 		{
 			iconSrc: "../../assets/mongoose.png",
