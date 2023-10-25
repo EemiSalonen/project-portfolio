@@ -4,6 +4,10 @@ main {
 	width: 100%;
 }
 
+main > * {
+	z-index: 1;
+}
+
 #imgs {
 	display: flex;
 	margin: 15px;
