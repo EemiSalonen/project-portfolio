@@ -9,8 +9,30 @@ main {
 	margin: 15px;
 }
 
+#desc {
+	padding: 10px;
+	border-bottom: var(--text) solid 2px;
+	border-right: var(--text) solid 2px;
+}
+
 #container {
 	grid-column: 2;
+	border-top: var(--text) solid 2px;
+	border-left: var(--text) solid 2px;
+	padding: 20px;
+	height: 100%;
+}
+
+#title {
+	display: flex;
+	align-items: center;
+	width: fit-content;
+	transition: 150ms transform;
+}
+
+#title:hover {
+	transform: scale(1.1);
+	text-shadow: 1px 1px white;
 }
 
 .img-container {
@@ -27,6 +49,7 @@ img {
 	padding: 15px;
 	font-size: 0.8em;
 	cursor: pointer;
+	transition: 200ms transform;
 }
 
 .img-container > p:hover {
@@ -36,10 +59,6 @@ img {
 h2 {
 	margin: 15px;
 	cursor: pointer;
-}
-
-h2:hover {
-	transform: scale(1.1);
 }
 
 h3 {

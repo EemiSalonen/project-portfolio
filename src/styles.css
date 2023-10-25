@@ -1,18 +1,21 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  color: var(--text);
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+	color: var(--text);
 }
 
 :root {
-  --background: #101010;
-  --section: #1e1e1e;
-  --card-background: #363636;
-  --text: #fffff8;
+	--background: rgb(31, 31, 31);
+	--section: rgb(24, 24, 24);
+	--card-background: #363636;
+	--text: #fffff8;
+	--contrast: #eb5e28;
 }
 
-html {
-  background-color: var(--background);
+html,
+body {
+	background-color: var(--background);
+	height: 100%;
 }
