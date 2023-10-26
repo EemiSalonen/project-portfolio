@@ -1,45 +1,18 @@
 import { Component } from "@angular/core";
-import { projects } from "../projects/projects";
+import { Router } from "@angular/router";
 
 @Component({
-  selector: "app-landing",
-  templateUrl: "./landing.component.html",
-  styleUrls: ["./landing.component.css"],
+	selector: "app-landing",
+	templateUrl: "./landing.component.html",
+	styleUrls: ["./landing.component.css"],
 })
 export class LandingComponent {
-  public tourasIcons = [
-    {
-      iconSrc:
-        "https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg",
-      alt: "sveltelogo",
-    },
-    {
-      iconSrc: "../../assets/express.png",
-      alt: "expresslogo",
-    },
-    {
-      iconSrc: "../../assets/mongo.png",
-      alt: "mongologo",
-    },
-  ];
+	constructor(private router: Router) {}
 
-  public flagguesserIcons = [
-    {
-      iconSrc:
-        "https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg",
-      alt: "sveltelogo",
-    },
-    {
-      iconSrc: "../../assets/express.png",
-      alt: "expresslogo",
-    },
-    {
-      iconSrc: "../../assets/mongo.png",
-      alt: "mongologo",
-    },
-    {
-      iconSrc: "../../assets/mongoose.png",
-      alt: "mongooselogo",
-    },
-  ];
+	public projectsPath = "/projects";
+	public contactPath = "/contact";
+
+	public navigate(path: string) {
+		this.router.navigateByUrl(path);
+	}
 }

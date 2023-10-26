@@ -11,6 +11,7 @@ import { IssueImg } from "../types/IssueImg";
 })
 export class ProjectComponent {
 	@Input() title!: string;
+	@Input() ghLink!: string;
 
 	open = "";
 
@@ -22,6 +23,7 @@ export class ProjectComponent {
 		id: -1,
 		title: "placeholder",
 		desc: "placeholder",
+		ghLink: "placeholder",
 		issues: [],
 	};
 

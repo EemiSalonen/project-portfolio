@@ -7,6 +7,7 @@ import { LandingComponent } from "./landing/landing.component";
 import { CardComponent } from "./card/card.component";
 import { ProjectComponent } from "./project/project.component";
 import { ImgviewComponent } from './imgview/imgview.component';
+import { ProjectSelectionComponent } from './project-selection/project-selection.component';
 
 @NgModule({
 	declarations: [
@@ -15,6 +16,7 @@ import { ImgviewComponent } from './imgview/imgview.component';
 		CardComponent,
 		ProjectComponent,
   ImgviewComponent,
+  ProjectSelectionComponent,
 	],
 	imports: [BrowserModule, AppRoutingModule],
 	providers: [],
