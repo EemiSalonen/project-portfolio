@@ -13,11 +13,11 @@ export class ProjectSelectionComponent {
 			alt: "sveltelogo",
 		},
 		{
-			iconSrc: "../../assets/mongo.png",
+			iconSrc: "../../assets/icons/mongo.png",
 			alt: "mongologo",
 		},
 		{
-			iconSrc: "../../assets/express.png",
+			iconSrc: "../../assets/icons/express.png",
 			alt: "expresslogo",
 		},
 	];
@@ -29,15 +29,15 @@ export class ProjectSelectionComponent {
 			alt: "sveltelogo",
 		},
 		{
-			iconSrc: "../../assets/mongo.png",
+			iconSrc: "../../assets/icons/mongo.png",
 			alt: "mongologo",
 		},
 		{
-			iconSrc: "../../assets/express.png",
+			iconSrc: "../../assets/icons/express.png",
 			alt: "expresslogo",
 		},
 		{
-			iconSrc: "../../assets/mongoose.png",
+			iconSrc: "../../assets/icons/mongoose.png",
 			alt: "mongooselogo",
 		},
 	];

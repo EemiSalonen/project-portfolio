@@ -24,7 +24,7 @@
 	display: flex;
 	flex-direction: column;
 	border-left: 5px var(--contrast) solid;
-	width: 100%;
+	width: 500px;
 	border-top-right-radius: 2px;
 	border-bottom-right-radius: 2px;
 	padding-left: 15px;
@@ -94,4 +94,30 @@ button {
 
 button:hover {
 	transform: scale(1.05);
+}
+
+/* Media querys */
+
+@media only screen and (max-width: 900px) {
+	#outer {
+		flex-direction: column;
+	}
+	#desc {
+		width: 380px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	img {
+		width: 300px;
+	}
+	#outer {
+		flex-direction: column;
+	}
+	#desc {
+		width: 300px;
+	}
+	p {
+		margin-bottom: 10px;
+	}
 }

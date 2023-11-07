@@ -1,6 +1,6 @@
 import { Project } from "../types/Project";
 
-const path = "../../assets/";
+const path = "../../assets/issue_imgs/";
 
 export const projects: Project[] = [
 	{
@@ -108,6 +108,29 @@ export const projects: Project[] = [
 						src: path + "sessionstorage.PNG",
 						desc: "User loaded from session storage",
 						alt: "session storage",
+					},
+				],
+			},
+			{
+				title: "Backend testing",
+				desc: "Backend functionality must be tested, such as connecting, creating users and tournaments",
+				resolution:
+					"Solved by creating a testing pipeline with Mocha/Chai, that is automated to test first the connection to the database and then creates a new user, logs in, creates a tournament and finally deletes the testuser. Each step is verified to work, and if not then the test pipeline alerts about the issue in the console.",
+				images: [
+					{
+						src: path + "connect_register.PNG",
+						desc: "Connect and register tests",
+						alt: "connect and register tests",
+					},
+					{
+						src: path + "login_tournament_addition.PNG",
+						desc: "Login and tournament addition tests",
+						alt: "login and tournament addition tests",
+					},
+					{
+						src: path + "user_deletion.PNG",
+						desc: "User deletion test",
+						alt: "user deletion test",
 					},
 				],
 			},
