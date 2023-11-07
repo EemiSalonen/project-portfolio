@@ -7,8 +7,8 @@
 		<br />
 
 		<div id="issues" *ngFor="let issue of proj.issues">
-			<div id="title">
-				<h2 (click)="openIssue(issue.title)">{{ issue.title }}</h2>
+			<div (click)="openIssue(issue.title)" id="title">
+				<h2>{{ issue.title }}</h2>
 				<span *ngIf="open !== issue.title">+</span>
 				<span *ngIf="open === issue.title">-</span>
 			</div>
