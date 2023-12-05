@@ -1,15 +1,17 @@
 #bg-img {
-  height: 100%;
-  width: 100%;
-  background-image: url("../assets/bg-img.jpg");
+	height: 100%;
+	width: 100%;
+	background-image: url("../assets/bg-img.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #bg-img:after {
-  content: "";
-  position: absolute;
-  backdrop-filter: blur(8px) brightness(20%) grayscale(100%);
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+	content: "";
+	position: absolute;
+	backdrop-filter: blur(10px) brightness(15%) grayscale(100%);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
