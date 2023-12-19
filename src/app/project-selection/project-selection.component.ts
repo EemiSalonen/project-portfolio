@@ -41,4 +41,11 @@ export class ProjectSelectionComponent {
 			alt: "mongooselogo",
 		},
 	];
+
+	public angForumIcons = [
+		{
+			iconSrc: "../../assets/icons/angular.png",
+			alt: "angularlogo",
+		},
+	];
 }
