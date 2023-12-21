@@ -270,7 +270,87 @@ export const projects: Project[] = [
 				desc: "I wanted to make the application out of reusable components.",
 				resolution:
 					"I created a core forum component which can be added to create new subjects on the site such as the current one HTML, CSS, JavaScript. I wrote the forums functionality in to this core component to reduce the amount of redundancy in the application.",
-				images: [],
+				images: [
+					{
+						src: path + "ang_forum_core.PNG",
+						desc: "Core component markup",
+						alt: "coremarkup",
+					},
+					{
+						src: path + "ang_forum_core_ts.PNG",
+						desc: "Core component logic",
+						alt: "corelogic",
+					},
+				],
+			},
+			{
+				title: "Application styling",
+				desc: "I wanted to create a simple, but pleasing user interface for the application.",
+				resolution:
+					"I used a relaxing blue color pallette that is easy on the eyes and has a nice calming effect to it. As a contrast color I used a soft red color that matches nicely with the soft blue colors that a predominant in the application. I stored these colors as CSS variables for easy testing and changing if necessary, while providing quick access to the colors where they are needed.",
+				images: [
+					{
+						src: path + "ang_forum_landing.PNG",
+						desc: "Landing page",
+						alt: "landingpage",
+					},
+					{
+						src: path + "ang_forum_selection.PNG",
+						desc: "Selection page",
+						alt: "selectionpage",
+					},
+					{
+						src: path + "ang_forum_posts.PNG",
+						desc: "JS Posts page",
+						alt: "postspage",
+					},
+				],
+			},
+			{
+				title: "Posting questions",
+				desc: "User need to be able to ask questions",
+				resolution:
+					"I created a system to allow users to post questions, which are added to the test database and sorted to allow each user to track their own questions.",
+				images: [
+					{
+						src: path + "ang_forum_posting.PNG",
+						desc: "Post forum",
+						alt: "postforum",
+					},
+					{
+						src: path + "ang_forum_createpost.PNG",
+						desc: "Posting logic",
+						alt: "postinglogic",
+					},
+					{
+						src: path + "ang_forum_validation_and_markup.PNG",
+						desc: "Markup and validation",
+						alt: "markupandvalidation",
+					},
+					{
+						src: path + "ang_forum_personalposts.PNG",
+						desc: "Personal posts",
+						alt: "personalposts",
+					},
+				],
+			},
+			{
+				title: "Responding to posts",
+				desc: "Users need to be able to post responses to posts",
+				resolution:
+					"I created a system for responding to posts, by adding the responses to the database as a part of the posts.",
+				images: [
+					{
+						src: path + "ang_forum_response.PNG",
+						desc: "Post response",
+						alt: "postresponse",
+					},
+					{
+						src: path + "ang_forum_response_logic.PNG",
+						desc: "Response logic",
+						alt: "responselogics",
+					},
+				],
 			},
 		],
 	},
