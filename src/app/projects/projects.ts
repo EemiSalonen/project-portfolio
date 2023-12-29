@@ -354,4 +354,53 @@ export const projects: Project[] = [
 			},
 		],
 	},
+	{
+		id: 2,
+		title: "Flagguesser",
+		desc: "Flagguesser was my first full stack project. It includes a frontend created with Svelte and a backend created with Mongoose and Express REST API. This project was very useful for learning core concepts in frontend programming, such as component structure, props, custom events, stores and many others. Also I used it to put into practice aspects of backend programming I had learned at that point. Making this project was a lot of fun and played a large part in igniting my passion for full stack development.",
+		ghLink: "https://github.com/EemiSalonen/flagguesser",
+		issues: [
+			{
+				title: "Game logic",
+				desc: "Game needs functionality to display one flag at a time from a group of ten flags, and giving four options to choose from. The result needs to be stored in the database and displayed locally",
+				resolution:
+					"Fetch data from the API in to an array of ten and then increment a value to get one flag at the time. User profile stats are incremented after answer is resolved and at the end of the set of flags",
+				images: [
+					{
+						src: path + "flag_sendanswer.PNG",
+						desc: "Send answer",
+						alt: "sendanswer",
+					},
+					{
+						src: path + "flag_buttonset.PNG",
+						desc: "Button set randomizer",
+						alt: "buttonset",
+					},
+					{
+						src: path + "flag_startgame.PNG",
+						desc: "Start game",
+						alt: "startgame",
+					},
+				],
+			},
+			{
+				title: "User data retention",
+				desc: "Users game history and stats should be saved and sortable",
+				resolution:
+					"Users stats are stored in the Mongo database, and loaded at the end of the round to be displayed on the leaderboards. Clicking on the header of the table allows for them to be sorted accordingly ",
+				images: [
+					{
+						src: path + "flag_leaderboards.PNG",
+						desc: "Leaderboards",
+						alt: "leaderboards",
+					},
+					{
+						src: path + "flag_scorescreenhtml.PNG",
+						desc: "Scorescreen markup",
+						alt: "scorescreenmarkup",
+					},
+				],
+			},
+		],
+	},
 ];
