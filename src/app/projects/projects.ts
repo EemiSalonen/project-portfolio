@@ -401,6 +401,70 @@ export const projects: Project[] = [
 					},
 				],
 			},
+			{
+				title: "Score calculation",
+				desc: "Score needs to be calculated based on the speed and correctness of the answer, giving more score for quick answers",
+				resolution:
+					"Score is defined by dividing 100 by the time on the clock and a point modifier increases on every correct answer and reset to 100 if an answer is incorrect. This encourages quick answers and gives the game a competitive edge",
+				images: [
+					{
+						src: path + "flag_buttons.PNG",
+						desc: "Score and time",
+						alt: "scoreandtime",
+					},
+					{
+						src: path + "flag_scorecalc.PNG",
+						desc: "Score calculation",
+						alt: "scorecalculation",
+					},
+				],
+			},
+			{
+				title: "User Store",
+				desc: "User store is needed to keep track of user data and make requests to the REST API",
+				resolution:
+					"I created a store with the Svelte store functionality and created an object to handle making request to the REST API and to serve user data to the frontend application",
+				images: [
+					{
+						src: path + "flag_userstoreobject.PNG",
+						desc: "User store object",
+						alt: "userstoreobject",
+					},
+					{
+						src: path + "flag_register_validation.PNG",
+						desc: "Register and validation",
+						alt: "registerandvalidation",
+					},
+					{
+						src: path + "flag_user_stat_function.PNG",
+						desc: "User stat functions",
+						alt: "userstatfunctions",
+					},
+				],
+			},
+			{
+				title: "Function library",
+				desc: "The application needed a function library for various function that are used through out application and to organize the application structure",
+				resolution:
+					"I placed the functions in to a seperate JS file, from where they could be easily improted through out the application and kept seperate from the specific components",
+				images: [
+					{
+						src: path + "flag_checkindex.PNG",
+						desc: "Check index",
+						alt: "checkindex",
+					},
+					{
+						src: path + "flag_randomizecountry.PNG",
+						desc: "Randomize country",
+						alt: "randomizecountry",
+					},
+					{
+						src: path + "flag_getcountries.PNG",
+						desc: "Get countries",
+						alt: "getcountries",
+					},
+				],
+			},
 		],
 	},
 ];
