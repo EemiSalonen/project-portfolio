@@ -13,7 +13,8 @@ export class ProjectComponent {
 	@Input() title!: string;
 	@Input() ghLink!: string;
 
-	open = "";
+	public open = "";
+	private prevOpen = "";
 
 	constructor(private route: ActivatedRoute) {
 		this.getProject();
@@ -47,9 +48,15 @@ export class ProjectComponent {
 
 	public selectImage(img: IssueImg) {
 		this.selectedImg = img;
+
+		this.prevOpen = this.open;
+		this.open = "";
 	}
 
 	public closeImage() {
 		this.selectedImg = null;
+		if (this.prevOpen) {
+			this.open = this.prevOpen;
+		}
 	}
 }

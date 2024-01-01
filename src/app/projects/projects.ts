@@ -458,6 +458,14 @@ export const projects: Project[] = [
 						desc: "Randomize country",
 						alt: "randomizecountry",
 					},
+				],
+			},
+			{
+				title: "Country data",
+				desc: "The application needed data about countries to display the flags and names",
+				resolution:
+					"I used restcountries.com API to get country data in the format I wanted. The API also lists countries that are autonomous territories of other countries, so to make the game easier these are filtered out.",
+				images: [
 					{
 						src: path + "flag_getcountries.PNG",
 						desc: "Get countries",

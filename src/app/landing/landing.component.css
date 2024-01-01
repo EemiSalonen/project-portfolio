@@ -77,3 +77,14 @@ button:hover {
 	right: 0;
 	bottom: 0;
 }
+
+@media only screen and (max-width: 1000px) {
+	main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	header {
+		margin: 35px;
+	}
+}
