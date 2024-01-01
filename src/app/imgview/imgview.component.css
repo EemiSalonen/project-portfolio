@@ -23,7 +23,12 @@ button {
 	width: 40px;
 	color: var(--text);
 	margin-bottom: 10px;
-	background-color: var(--header);
+	background-color: var(--contrast);
+	border: none;
+}
+
+button:active {
+	background-color: var(--text);
 }
 
 i {

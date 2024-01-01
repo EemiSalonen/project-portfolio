@@ -13,6 +13,7 @@ export class LandingComponent {
 	public contactPath = "/contact";
 
 	public navigate(path: string) {
+		console.log(path);
 		this.router.navigateByUrl(path);
 	}
 }
